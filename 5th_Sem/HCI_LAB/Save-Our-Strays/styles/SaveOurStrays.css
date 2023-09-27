@@ -1,0 +1,512 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rubik&display=swap');
+
+@font-face {
+    font-family: myFont;
+    src: url(../img/tesla/TESLA.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+/* ################### HTML element styling ####################### */
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p,
+li {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.6em;
+    letter-spacing: 0.06em;
+}
+
+p {
+    font-size: 1.6rem;
+    font-weight: 600;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.08em;
+}
+
+h1 {
+    margin-bottom: 0.1em;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+}
+
+h2,
+h3 {
+    margin-bottom: 0.1em;
+    letter-spacing: 0.04em;
+    word-spacing: 0.6rem;
+    font-weight: 600;
+}
+
+/* #################### utility classes ################ */
+
+.container {
+    max-width: 1150px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.lg-heading1 {
+    font-size: 3rem;
+    padding-bottom: 0.8rem;
+}
+
+.md-heading {
+    font-size: 80px;
+    font-family:gill sans;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #000000;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-gray {
+    color: #555555;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 0.5em 1.5em;
+    font-weight: 500;
+    text-transform: uppercase;
+    margin: 0.5em 0em;
+}
+
+.btn-primary {
+    background-color: rgba(0, 0, 0, 0.571);
+    border-radius: 10em;
+}
+
+.btn-secondary {
+    border: 2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background-color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #ddd;
+}
+
+.btn-secondary:hover {
+    background-color: #fcf3f2;
+}
+
+.showcase {
+    padding: 6rem 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 1920 1080%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%221920%22 height=%221080%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h1920v1080H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23fff%22 d=%22M0 0h1920v1080H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%238595b4%22 stroke-width=%22.384%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22%238595b435%22 d=%22M96 0h48v48H96z%22%2F%3E%3Cpath fill=%22none%22 d=%22M144 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b49b%22 d=%22M192 0h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M240 0h48v48h-48zM288 0h48v48h-48zM336 0h48v48h-48zM432 0h48v48h-48zM480 0h48v48h-48zM528 0h48v48h-48zM576 0h48v48h-48zM624 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b409%22 d=%22M672 0h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M720 0h48v48h-48zM768 0h48v48h-48zM816 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4eb%22 d=%22M864 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b418%22 d=%22M912 0h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M960 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4f6%22 d=%22M1008 0h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1056 0h48v48h-48zM1104 0h48v48h-48zM1200 0h48v48h-48zM1296 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b450%22 d=%22M1344 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b49e%22 d=%22M1392 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b471%22 d=%22M1440 0h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1488 0h48v48h-48zM1536 0h48v48h-48zM1584 0h48v48h-48zM1632 0h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4fc%22 d=%22M1680 0h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1824 0h48v48h-48zM1872 0h48v48h-48zM0 48h48v48H0z%22%2F%3E%3Cpath fill=%22%238595b4e4%22 d=%22M48 48h48v48H48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M96 48h48v48H96zM144 48h48v48h-48zM192 48h48v48h-48zM240 48h48v48h-48zM288 48h48v48h-48zM336 48h48v48h-48zM384 48h48v48h-48zM480 48h48v48h-48zM576 48h48v48h-48zM624 48h48v48h-48zM672 48h48v48h-48zM720 48h48v48h-48zM768 48h48v48h-48zM816 48h48v48h-48zM864 48h48v48h-48zM912 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b435%22 d=%22M960 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4c8%22 d=%22M1008 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b441%22 d=%22M1056 48h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1104 48h48v48h-48zM1152 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44a%22 d=%22M1200 48h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1248 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b496%22 d=%22M1296 48h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1344 48h48v48h-48zM1392 48h48v48h-48zM1440 48h48v48h-48zM1536 48h48v48h-48zM1584 48h48v48h-48zM1632 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4da%22 d=%22M1680 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b487%22 d=%22M1728 48h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 48h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ea%22 d=%22M1824 48h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1872 48h48v48h-48zM0 96h48v48H0zM48 96h48v48H48zM240 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b498%22 d=%22M288 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44a%22 d=%22M336 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M384 96h48v48h-48zM432 96h48v48h-48zM480 96h48v48h-48zM528 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b480%22 d=%22M576 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M624 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4cf%22 d=%22M720 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M768 96h48v48h-48zM816 96h48v48h-48zM864 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b414%22 d=%22M912 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b464%22 d=%22M960 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1008 96h48v48h-48zM1056 96h48v48h-48zM1104 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b497%22 d=%22M1152 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ce%22 d=%22M1200 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b481%22 d=%22M1248 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1296 96h48v48h-48zM1344 96h48v48h-48zM1392 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b413%22 d=%22M1440 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1488 96h48v48h-48zM1536 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b426%22 d=%22M1680 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1728 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4b0%22 d=%22M1776 96h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b42e%22 d=%22M1824 96h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M48 144h48v48H48zM96 144h48v48H96zM144 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e7%22 d=%22M192 144h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M240 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b48f%22 d=%22M288 144h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M336 144h48v48h-48zM384 144h48v48h-48zM432 144h48v48h-48zM528 144h48v48h-48zM576 144h48v48h-48zM624 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4b2%22 d=%22M672 144h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M720 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ce%22 d=%22M768 144h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M816 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b435%22 d=%22M864 144h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 144h48v48h-48zM960 144h48v48h-48zM1056 144h48v48h-48zM1152 144h48v48h-48zM1200 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b49b%22 d=%22M1248 144h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1296 144h48v48h-48zM1344 144h48v48h-48zM1440 144h48v48h-48zM1536 144h48v48h-48zM1584 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ac%22 d=%22M1632 144h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1728 144h48v48h-48zM1776 144h48v48h-48zM1824 144h48v48h-48zM1872 144h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b401%22 d=%22M0 192h48v48H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M48 192h48v48H48zM96 192h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b479%22 d=%22M144 192h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M192 192h48v48h-48zM240 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4b3%22 d=%22M288 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b46d%22 d=%22M336 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b42c%22 d=%22M384 192h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M480 192h48v48h-48zM528 192h48v48h-48zM576 192h48v48h-48zM624 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4de%22 d=%22M672 192h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M720 192h48v48h-48zM912 192h48v48h-48zM1056 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a1%22 d=%22M1104 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b498%22 d=%22M1152 192h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1200 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b493%22 d=%22M1248 192h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1296 192h48v48h-48zM1344 192h48v48h-48zM1392 192h48v48h-48zM1440 192h48v48h-48zM1488 192h48v48h-48zM1584 192h48v48h-48zM1632 192h48v48h-48zM1680 192h48v48h-48zM1728 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b475%22 d=%22M1824 192h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1872 192h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4c2%22 d=%22M0 240h48v48H0z%22%2F%3E%3Cpath fill=%22%238595b4bb%22 d=%22M48 240h48v48H48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M96 240h48v48H96zM192 240h48v48h-48zM240 240h48v48h-48zM288 240h48v48h-48zM336 240h48v48h-48zM384 240h48v48h-48zM432 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4b4%22 d=%22M528 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M624 240h48v48h-48zM672 240h48v48h-48zM720 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4f2%22 d=%22M768 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b476%22 d=%22M864 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b451%22 d=%22M960 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1008 240h48v48h-48zM1056 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b460%22 d=%22M1104 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1200 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44f%22 d=%22M1248 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b456%22 d=%22M1296 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1344 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4eb%22 d=%22M1392 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1440 240h48v48h-48zM1488 240h48v48h-48zM1536 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a6%22 d=%22M1584 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1632 240h48v48h-48zM1680 240h48v48h-48zM1728 240h48v48h-48zM1776 240h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ac%22 d=%22M1824 240h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1872 240h48v48h-48zM0 288h48v48H0zM48 288h48v48H48zM96 288h48v48H96zM144 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b494%22 d=%22M192 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4bf%22 d=%22M288 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44b%22 d=%22M336 288h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M384 288h48v48h-48zM432 288h48v48h-48zM480 288h48v48h-48zM528 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b469%22 d=%22M576 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b440%22 d=%22M672 288h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M720 288h48v48h-48zM816 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b462%22 d=%22M864 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4cf%22 d=%22M960 288h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1008 288h48v48h-48zM1104 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b460%22 d=%22M1152 288h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1200 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b466%22 d=%22M1248 288h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1296 288h48v48h-48zM1392 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4c3%22 d=%22M1440 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ef%22 d=%22M1488 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b47b%22 d=%22M1536 288h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1584 288h48v48h-48zM1632 288h48v48h-48zM1680 288h48v48h-48zM1728 288h48v48h-48zM1776 288h48v48h-48zM1824 288h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e2%22 d=%22M1872 288h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M96 336h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b49c%22 d=%22M144 336h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4b5%22 d=%22M192 336h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M240 336h48v48h-48zM288 336h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b427%22 d=%22M336 336h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b481%22 d=%22M384 336h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M432 336h48v48h-48zM480 336h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b46c%22 d=%22M528 336h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M576 336h48v48h-48zM624 336h48v48h-48zM672 336h48v48h-48zM768 336h48v48h-48zM816 336h48v48h-48zM864 336h48v48h-48zM912 336h48v48h-48zM960 336h48v48h-48zM1008 336h48v48h-48zM1056 336h48v48h-48zM1104 336h48v48h-48zM1152 336h48v48h-48zM1248 336h48v48h-48zM1344 336h48v48h-48zM1392 336h48v48h-48zM1440 336h48v48h-48zM1488 336h48v48h-48zM1536 336h48v48h-48zM1584 336h48v48h-48zM1632 336h48v48h-48zM1680 336h48v48h-48zM1728 336h48v48h-48zM1824 336h48v48h-48zM1872 336h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b444%22 d=%22M0 384h48v48H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M96 384h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b4d6%22 d=%22M144 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b48a%22 d=%22M192 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b475%22 d=%22M240 384h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M288 384h48v48h-48zM336 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b460%22 d=%22M432 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b45c%22 d=%22M480 384h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M528 384h48v48h-48zM576 384h48v48h-48zM624 384h48v48h-48zM672 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4d6%22 d=%22M720 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b483%22 d=%22M864 384h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 384h48v48h-48zM960 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b459%22 d=%22M1008 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b435%22 d=%22M1056 384h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1104 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ab%22 d=%22M1152 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b459%22 d=%22M1200 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b414%22 d=%22M1248 384h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1296 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44f%22 d=%22M1344 384h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1488 384h48v48h-48zM1632 384h48v48h-48zM1728 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44d%22 d=%22M1776 384h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b453%22 d=%22M1824 384h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1872 384h48v48h-48zM0 432h48v48H0zM48 432h48v48H48zM96 432h48v48H96zM144 432h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b45c%22 d=%22M192 432h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M240 432h48v48h-48zM288 432h48v48h-48zM384 432h48v48h-48zM432 432h48v48h-48zM480 432h48v48h-48zM576 432h48v48h-48zM624 432h48v48h-48zM720 432h48v48h-48zM816 432h48v48h-48zM864 432h48v48h-48zM960 432h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b417%22 d=%22M1008 432h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b487%22 d=%22M1056 432h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1104 432h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4f4%22 d=%22M1152 432h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b439%22 d=%22M1344 432h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1392 432h48v48h-48zM1440 432h48v48h-48zM1536 432h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b49a%22 d=%22M1584 432h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1632 432h48v48h-48zM1680 432h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b435%22 d=%22M1728 432h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1824 432h48v48h-48zM1872 432h48v48h-48zM0 480h48v48H0z%22%2F%3E%3Cpath fill=%22%238595b417%22 d=%22M48 480h48v48H48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M144 480h48v48h-48zM240 480h48v48h-48zM336 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4cd%22 d=%22M384 480h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M432 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4fd%22 d=%22M480 480h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M528 480h48v48h-48zM576 480h48v48h-48zM624 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b408%22 d=%22M672 480h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M720 480h48v48h-48zM768 480h48v48h-48zM816 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b441%22 d=%22M864 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b481%22 d=%22M912 480h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M960 480h48v48h-48zM1056 480h48v48h-48zM1104 480h48v48h-48zM1152 480h48v48h-48zM1200 480h48v48h-48zM1248 480h48v48h-48zM1296 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b43a%22 d=%22M1392 480h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1440 480h48v48h-48zM1488 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e8%22 d=%22M1536 480h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1584 480h48v48h-48zM1632 480h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4f2%22 d=%22M1728 480h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 480h48v48h-48zM1872 480h48v48h-48zM0 528h48v48H0z%22%2F%3E%3Cpath fill=%22%238595b460%22 d=%22M48 528h48v48H48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M96 528h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b4e5%22 d=%22M144 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M192 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b45b%22 d=%22M240 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M336 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b424%22 d=%22M480 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M528 528h48v48h-48zM576 528h48v48h-48zM624 528h48v48h-48zM672 528h48v48h-48zM720 528h48v48h-48zM768 528h48v48h-48zM816 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b448%22 d=%22M864 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b418%22 d=%22M912 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M960 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b483%22 d=%22M1008 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1056 528h48v48h-48zM1104 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b47d%22 d=%22M1152 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1200 528h48v48h-48zM1248 528h48v48h-48zM1296 528h48v48h-48zM1344 528h48v48h-48zM1392 528h48v48h-48zM1488 528h48v48h-48zM1536 528h48v48h-48zM1584 528h48v48h-48zM1632 528h48v48h-48zM1680 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ba%22 d=%22M1728 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 528h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b405%22 d=%22M1824 528h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1872 528h48v48h-48zM0 576h48v48H0zM48 576h48v48H48zM96 576h48v48H96zM192 576h48v48h-48zM240 576h48v48h-48zM288 576h48v48h-48zM336 576h48v48h-48zM384 576h48v48h-48zM432 576h48v48h-48zM528 576h48v48h-48zM576 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4f2%22 d=%22M624 576h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M672 576h48v48h-48zM720 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4b8%22 d=%22M768 576h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M864 576h48v48h-48zM912 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b47a%22 d=%22M960 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b477%22 d=%22M1056 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b431%22 d=%22M1104 576h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1152 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4bd%22 d=%22M1200 576h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1248 576h48v48h-48zM1296 576h48v48h-48zM1344 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b487%22 d=%22M1392 576h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1440 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e6%22 d=%22M1488 576h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1584 576h48v48h-48zM1632 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b419%22 d=%22M1680 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b473%22 d=%22M1776 576h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b413%22 d=%22M1824 576h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1872 576h48v48h-48zM48 624h48v48H48zM96 624h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b4a6%22 d=%22M144 624h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M240 624h48v48h-48zM288 624h48v48h-48zM336 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4d6%22 d=%22M384 624h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M480 624h48v48h-48zM576 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b479%22 d=%22M624 624h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M672 624h48v48h-48zM720 624h48v48h-48zM768 624h48v48h-48zM816 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b42a%22 d=%22M864 624h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b433%22 d=%22M960 624h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1008 624h48v48h-48zM1056 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b437%22 d=%22M1200 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b452%22 d=%22M1296 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b429%22 d=%22M1344 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b453%22 d=%22M1392 624h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1440 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b409%22 d=%22M1488 624h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1584 624h48v48h-48zM1632 624h48v48h-48zM1680 624h48v48h-48zM1776 624h48v48h-48zM1872 624h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4aa%22 d=%22M48 672h48v48H48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M96 672h48v48H96zM144 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b43a%22 d=%22M240 672h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M288 672h48v48h-48zM336 672h48v48h-48zM384 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b453%22 d=%22M432 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b477%22 d=%22M480 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b432%22 d=%22M528 672h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M576 672h48v48h-48zM624 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4d6%22 d=%22M672 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b474%22 d=%22M720 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b472%22 d=%22M768 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4db%22 d=%22M816 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b42d%22 d=%22M864 672h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 672h48v48h-48zM960 672h48v48h-48zM1008 672h48v48h-48zM1056 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b431%22 d=%22M1104 672h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1152 672h48v48h-48zM1200 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b467%22 d=%22M1248 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b424%22 d=%22M1296 672h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1344 672h48v48h-48zM1392 672h48v48h-48zM1440 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b47c%22 d=%22M1488 672h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b477%22 d=%22M1536 672h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1632 672h48v48h-48zM1680 672h48v48h-48zM1728 672h48v48h-48zM1776 672h48v48h-48zM1872 672h48v48h-48zM0 720h48v48H0zM48 720h48v48H48zM96 720h48v48H96zM144 720h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b436%22 d=%22M192 720h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M240 720h48v48h-48zM288 720h48v48h-48zM336 720h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b485%22 d=%22M384 720h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M480 720h48v48h-48zM528 720h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b45c%22 d=%22M576 720h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M720 720h48v48h-48zM768 720h48v48h-48zM816 720h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4cc%22 d=%22M864 720h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b47b%22 d=%22M912 720h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M960 720h48v48h-48zM1008 720h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44b%22 d=%22M1056 720h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1104 720h48v48h-48zM1152 720h48v48h-48zM1200 720h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b426%22 d=%22M1248 720h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1296 720h48v48h-48zM1440 720h48v48h-48zM1488 720h48v48h-48zM1536 720h48v48h-48zM1584 720h48v48h-48zM1680 720h48v48h-48zM1728 720h48v48h-48zM1776 720h48v48h-48zM1824 720h48v48h-48zM0 768h48v48H0zM48 768h48v48H48zM96 768h48v48H96zM144 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b48c%22 d=%22M192 768h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M240 768h48v48h-48zM288 768h48v48h-48zM336 768h48v48h-48zM384 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a7%22 d=%22M432 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4f7%22 d=%22M480 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b497%22 d=%22M528 768h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M576 768h48v48h-48zM624 768h48v48h-48zM672 768h48v48h-48zM720 768h48v48h-48zM864 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a0%22 d=%22M912 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b403%22 d=%22M960 768h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1008 768h48v48h-48zM1056 768h48v48h-48zM1104 768h48v48h-48zM1152 768h48v48h-48zM1248 768h48v48h-48zM1296 768h48v48h-48zM1344 768h48v48h-48zM1392 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b42c%22 d=%22M1488 768h48v48h-48zM1536 768h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1584 768h48v48h-48zM1632 768h48v48h-48zM1680 768h48v48h-48zM1728 768h48v48h-48zM1776 768h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b410%22 d=%22M1872 768h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 816h48v48H0zM48 816h48v48H48zM96 816h48v48H96zM144 816h48v48h-48zM192 816h48v48h-48zM240 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b40a%22 d=%22M288 816h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M384 816h48v48h-48zM528 816h48v48h-48zM624 816h48v48h-48zM672 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b496%22 d=%22M720 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b451%22 d=%22M768 816h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M816 816h48v48h-48zM864 816h48v48h-48zM912 816h48v48h-48zM960 816h48v48h-48zM1008 816h48v48h-48zM1056 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e1%22 d=%22M1104 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b437%22 d=%22M1152 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b459%22 d=%22M1200 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b442%22 d=%22M1248 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b495%22 d=%22M1296 816h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1392 816h48v48h-48zM1440 816h48v48h-48zM1488 816h48v48h-48zM1536 816h48v48h-48zM1584 816h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4c6%22 d=%22M1728 816h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1824 816h48v48h-48zM1872 816h48v48h-48zM0 864h48v48H0zM48 864h48v48H48zM96 864h48v48H96zM144 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a5%22 d=%22M192 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M288 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b45d%22 d=%22M336 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M384 864h48v48h-48zM432 864h48v48h-48zM480 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b436%22 d=%22M528 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M624 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b42a%22 d=%22M672 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b45d%22 d=%22M720 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M768 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4cf%22 d=%22M816 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b47d%22 d=%22M960 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1008 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b437%22 d=%22M1056 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1104 864h48v48h-48zM1152 864h48v48h-48zM1200 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e6%22 d=%22M1248 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b457%22 d=%22M1296 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1440 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b41f%22 d=%22M1488 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1536 864h48v48h-48zM1584 864h48v48h-48zM1632 864h48v48h-48zM1680 864h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b49b%22 d=%22M1728 864h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 864h48v48h-48zM1824 864h48v48h-48zM1872 864h48v48h-48zM0 912h48v48H0z%22%2F%3E%3Cpath fill=%22%238595b4c4%22 d=%22M48 912h48v48H48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M96 912h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b4d3%22 d=%22M144 912h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M192 912h48v48h-48zM240 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b41e%22 d=%22M336 912h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M384 912h48v48h-48zM432 912h48v48h-48zM480 912h48v48h-48zM528 912h48v48h-48zM576 912h48v48h-48zM624 912h48v48h-48zM672 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b469%22 d=%22M768 912h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M816 912h48v48h-48zM864 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b43c%22 d=%22M960 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4cb%22 d=%22M1008 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b490%22 d=%22M1056 912h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1152 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e3%22 d=%22M1200 912h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1248 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b418%22 d=%22M1296 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b457%22 d=%22M1344 912h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1392 912h48v48h-48zM1440 912h48v48h-48zM1488 912h48v48h-48zM1536 912h48v48h-48zM1584 912h48v48h-48zM1632 912h48v48h-48zM1680 912h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4c8%22 d=%22M1776 912h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1824 912h48v48h-48zM1872 912h48v48h-48zM0 960h48v48H0zM48 960h48v48H48zM96 960h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b4da%22 d=%22M144 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M192 960h48v48h-48zM288 960h48v48h-48zM336 960h48v48h-48zM432 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4bd%22 d=%22M480 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M528 960h48v48h-48zM624 960h48v48h-48zM672 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e6%22 d=%22M720 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M768 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a7%22 d=%22M816 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M864 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b422%22 d=%22M912 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M960 960h48v48h-48zM1008 960h48v48h-48zM1056 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ce%22 d=%22M1104 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4d6%22 d=%22M1152 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1248 960h48v48h-48zM1296 960h48v48h-48zM1344 960h48v48h-48zM1392 960h48v48h-48zM1488 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e6%22 d=%22M1536 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4d2%22 d=%22M1584 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b482%22 d=%22M1632 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e1%22 d=%22M1680 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b476%22 d=%22M1824 960h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1872 960h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b464%22 d=%22M0 1008h48v48H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M48 1008h48v48H48zM96 1008h48v48H96zM144 1008h48v48h-48zM240 1008h48v48h-48zM288 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b406%22 d=%22M336 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b48d%22 d=%22M384 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b457%22 d=%22M432 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M480 1008h48v48h-48zM528 1008h48v48h-48zM576 1008h48v48h-48zM624 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b44c%22 d=%22M672 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M720 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b466%22 d=%22M768 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4e7%22 d=%22M816 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b490%22 d=%22M864 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 1008h48v48h-48zM960 1008h48v48h-48zM1056 1008h48v48h-48zM1104 1008h48v48h-48zM1152 1008h48v48h-48zM1200 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a3%22 d=%22M1248 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1296 1008h48v48h-48zM1344 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4d0%22 d=%22M1392 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1440 1008h48v48h-48zM1488 1008h48v48h-48zM1536 1008h48v48h-48zM1584 1008h48v48h-48zM1632 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4a0%22 d=%22M1680 1008h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1776 1008h48v48h-48zM1824 1008h48v48h-48zM0 1056h48v48H0zM48 1056h48v48H48zM96 1056h48v48H96z%22%2F%3E%3Cpath fill=%22%238595b4be%22 d=%22M144 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M192 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4d1%22 d=%22M240 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M288 1056h48v48h-48zM336 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b49e%22 d=%22M384 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b407%22 d=%22M432 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M480 1056h48v48h-48zM528 1056h48v48h-48zM576 1056h48v48h-48zM624 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b48f%22 d=%22M672 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ad%22 d=%22M720 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4c4%22 d=%22M864 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M912 1056h48v48h-48zM960 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b485%22 d=%22M1008 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1056 1056h48v48h-48zM1104 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b41a%22 d=%22M1152 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1200 1056h48v48h-48zM1248 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4f9%22 d=%22M1296 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1344 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b487%22 d=%22M1392 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1440 1056h48v48h-48zM1488 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b415%22 d=%22M1536 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1680 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22%238595b4ea%22 d=%22M1728 1056h48v48h-48z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1824 1056h48v48h-48zM1872 1056h48v48h-48z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%220%22 stop-color=%22%23fff%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+}
+
+.row {
+    height: 400px;
+    background-color: #f0f2f4;
+    box-shadow: 5px 5px 20px 0px #9b9a9ab4;
+    border-radius: 30px;
+}
+
+.row1,
+.row2,
+.row3 {
+    margin-bottom: 6rem;
+}
+
+.row1 .imgbox,
+.row2 .textbox,
+.row3 .imgbox,
+.row4 .textbox {
+    float: left;
+    width: 50%;
+}
+
+.row2 .imgbox,
+.row1 .textbox,
+.row4 .imgbox,
+.row3 .textbox {
+    float: right;
+    width: 50%;
+}
+
+.row .imgbox {
+    height: 100%;
+    background-position: center;
+}
+
+.row .textbox {
+    height: 100%;
+    padding: 5rem;
+    text-align: justify;
+}
+
+.row .imgbox img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 30px;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ###################3 features section styling ################# */
+
+.features {
+    padding: 3rem 0rem;
+    margin-top: 3rem;
+}
+
+.boxrapper {
+    box-shadow: 5px 5px 20px 0px #0000005b;
+}
+
+.box {
+    width: 33.333333333%;
+    float: left;
+    padding: 3rem 1.5rem;
+    text-align: center;
+    height: 230px;
+}
+
+.box1,
+.box3 {
+    background-color: #263238;
+    color: whitesmoke;
+}
+
+.box2 {
+    background: linear-gradient(25deg, #d64c7f, #ee4758 50%);
+    color: #fff;
+}
+
+.boxrapper::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+i {
+    height: 0.8em;
+}
+
+/* ############# footer styling ############## */
+.footer {
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.social-media-links {
+    margin: 2rem 2rem;
+}
+
+.social-media-links i {
+    margin: 2rem;
+}
+
+
+/* ###################################### Media ###################################### */
+
+.background-video{
+    height:100vh;
+    width:100%;
+    background-image:linear-gradient(rgba(12,3,51,0.3),rgba(12,3,51,0.3));
+    position:relative;
+    padding:0 5%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+}
+
+.nav-name {
+    font-size: 70px;
+    color:white;
+}
+
+nav{
+    width:100%;
+    position:absolute;
+    top:0;
+    left:0;
+    padding:20px 8%;
+    display:flex;
+    align-items:center;
+    justify-content: space-between;
+}
+
+.logo{
+    width:100px;
+}
+
+nav ul li{
+    display: inline-block;
+    margin-left:40px;
+}
+
+nav ul li a{
+    text-decoration: none;
+    color:white;
+    font-size:20px;
+}
+
+.content{
+    text-align:center;
+}
+
+.content h1{
+    font-size: 200px;
+    color: white;
+    font-family:calibri;
+    font-weight: 600;
+    transition:0.5s;
+}
+
+.content h1:hover{
+    -webkit-text-stroke: 2px white;
+    color: transparent;
+}
+
+.content a{
+    text-decoration: none;
+    display: inline-block;
+    color: white;
+    font-size:24px;
+    border: 2px solid white;
+    padding:15px 70px;
+    border-radius: 50px;
+}
+
+.back-video{
+    position: absolute;
+    right:0;
+    bottom:0;
+    z-index:-1;
+}
+
+@media(min-aspect-ratio: 16/9){
+    .back-video{
+        width:100%;
+        height: auto;
+    }
+}
+
+@media(max-aspect-ratio: 16/9) {
+    .back-video {
+        width:auto;
+        height: 100%;
+    }
+}
+
+@media (max-width:500px) {
+    html {
+        font-size: 50%;
+    }
+
+    .row1,
+    .row2,
+    .row3,
+    .row4 {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .imgbox,
+    .row .textbox {
+        float: none;
+        width: 100%;
+        text-align: center;
+        height: auto;
+    }
+
+    .left-paragraph {
+        float: left;
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+
+    .right-paragraph {
+        float: right;
+        width: 50%;
+    }
+
+    .features .box {
+        width: 100%;
+        height: auto;
+        float: none;
+        box-shadow: 5px 5px 20px 0px #00000085;
+    }
+
+    .boxrapper .box1,
+    .boxrapper .box2,
+    .boxrapper .box3 {
+        margin-top: 7rem;
+    }
+
+    .boxrapper {
+        box-shadow: none;
+    }
+}
+
+@media (min-width:501px) and (max-width:790px) {
+    html {
+        font-size: 50%;
+    }
+
+    .row1,
+    .row2,
+    .row3,
+    .row4 {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .row {
+        height: auto;
+        width: 100%;
+    }
+
+    .row .imgbox,
+    .row .textbox {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .register {
+        float: none;
+        width: 100%;
+        display: block;
+    }
+
+    .left-paragraph {
+        float: left;
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+
+    .right-paragraph {
+        float: right;
+        width: 50%;
+    }
+
+    .features .box {
+        width: 100%;
+        height: auto;
+        float: none;
+        box-shadow: 5px 5px 20px 0px #00000085;
+
+    }
+
+    .boxrapper .box1,
+    .boxrapper .box2,
+    .boxrapper .box3 {
+        margin-top: 7rem;
+    }
+
+    .boxrapper {
+        box-shadow: none;
+    }
+
+}
+
+@media (min-width:792px) and (max-width:950px) {
+    html {
+        font-size: 9.5px;
+    }
+
+    .row1,
+    .row2,
+    .row3,
+    .row4 {
+        text-align: center;
+        height: auto;
+    }
+
+    .row .imgbox img {
+        height: fit-content;
+        background-size: 100% 100%;
+
+    }
+
+    .left-paragraph {
+        float: left;
+        width: 50%;
+        margin-top: 1rem;
+    }
+
+
+    .right-paragraph {
+        float: right;
+        width: 50%;
+    }
+
+    .features .box {
+        height: auto;
+        float: inherit;
+        margin-top: 5rem;
+        width: 100%;
+        box-shadow: 5px 5px 20px 0px #00000085;
+    }
+
+    .boxrapper {
+        box-shadow: none;
+    }
+
+
+}
