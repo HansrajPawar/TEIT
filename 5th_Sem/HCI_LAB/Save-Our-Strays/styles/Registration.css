@@ -1,0 +1,527 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap');
+
+
+/* ################################### Final ######################### */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rubik&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* ################### HTML element styling ####################### */
+
+html {
+    font-size: 62.5%;
+    scroll-behavior: smooth;
+    height: 100%;
+    box-sizing: border-box;
+}
+
+body {
+
+    position: relative;
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 15rem;
+    box-sizing: inherit;
+    width: 100%;
+    min-height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+    background-image: url("data:image/svg+xml;utf8,%3Csvg viewBox=%220 0 2000 1400%22 xmlns=%22http:%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cmask id=%22b%22 x=%220%22 y=%220%22 width=%222000%22 height=%221400%22%3E%3Cpath fill=%22url(%23a)%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3C%2Fmask%3E%3Cpath fill=%22%23fff%22 d=%22M0 0h2000v1400H0z%22%2F%3E%3Cg style=%22transform-origin:center center%22 stroke=%22%23adc8e0cc%22 stroke-width=%221.2%22 mask=%22url(%23b)%22%3E%3Cpath fill=%22%23adc8e041%22 d=%22M0 0h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e09d%22 d=%22M67 0h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 0h67v67h-67zM201 0h67v67h-67zM268 0h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e00e%22 d=%22M335 0h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 0h67v67h-67zM469 0h67v67h-67zM536 0h67v67h-67zM603 0h67v67h-67zM670 0h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a3%22 d=%22M737 0h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M804 0h67v67h-67zM871 0h67v67h-67zM938 0h67v67h-67zM1005 0h67v67h-67zM1072 0h67v67h-67zM1139 0h67v67h-67zM1206 0h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b0%22 d=%22M1273 0h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1340 0h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e022%22 d=%22M1407 0h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1474 0h67v67h-67zM1541 0h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e064%22 d=%22M1608 0h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e010%22 d=%22M1675 0h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1742 0h67v67h-67zM1809 0h67v67h-67zM1876 0h67v67h-67zM1943 0h67v67h-67zM0 67h67v67H0zM67 67h67v67H67zM134 67h67v67h-67zM201 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0be%22 d=%22M268 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0ad%22 d=%22M335 67h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c1%22 d=%22M469 67h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 67h67v67h-67zM603 67h67v67h-67zM670 67h67v67h-67zM737 67h67v67h-67zM804 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03b%22 d=%22M871 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e014%22 d=%22M938 67h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1005 67h67v67h-67zM1072 67h67v67h-67zM1139 67h67v67h-67zM1206 67h67v67h-67zM1273 67h67v67h-67zM1340 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e075%22 d=%22M1407 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c6%22 d=%22M1474 67h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1541 67h67v67h-67zM1608 67h67v67h-67zM1675 67h67v67h-67zM1742 67h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b4%22 d=%22M1809 67h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1876 67h67v67h-67zM1943 67h67v67h-67zM0 134h67v67H0zM67 134h67v67H67zM134 134h67v67h-67zM201 134h67v67h-67zM268 134h67v67h-67zM335 134h67v67h-67zM402 134h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e069%22 d=%22M469 134h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 134h67v67h-67zM603 134h67v67h-67zM670 134h67v67h-67zM737 134h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e087%22 d=%22M804 134h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M871 134h67v67h-67zM938 134h67v67h-67zM1005 134h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a3%22 d=%22M1072 134h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e06c%22 d=%22M1139 134h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1206 134h67v67h-67zM1273 134h67v67h-67zM1340 134h67v67h-67zM1407 134h67v67h-67zM1474 134h67v67h-67zM1541 134h67v67h-67zM1608 134h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e059%22 d=%22M1675 134h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a3%22 d=%22M1742 134h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1809 134h67v67h-67zM1876 134h67v67h-67zM1943 134h67v67h-67zM0 201h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e00b%22 d=%22M67 201h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 201h67v67h-67zM201 201h67v67h-67zM268 201h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e020%22 d=%22M335 201h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 201h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e086%22 d=%22M469 201h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 201h67v67h-67zM603 201h67v67h-67zM670 201h67v67h-67zM737 201h67v67h-67zM804 201h67v67h-67zM871 201h67v67h-67zM938 201h67v67h-67zM1005 201h67v67h-67zM1072 201h67v67h-67zM1139 201h67v67h-67zM1206 201h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b8%22 d=%22M1273 201h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e08d%22 d=%22M1340 201h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1407 201h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c7%22 d=%22M1474 201h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1541 201h67v67h-67zM1608 201h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e01e%22 d=%22M1675 201h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b4%22 d=%22M1742 201h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1809 201h67v67h-67zM1876 201h67v67h-67zM1943 201h67v67h-67zM0 268h67v67H0zM67 268h67v67H67z%22%2F%3E%3Cpath fill=%22%23adc8e0c6%22 d=%22M134 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M201 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e079%22 d=%22M268 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M335 268h67v67h-67zM402 268h67v67h-67zM469 268h67v67h-67zM536 268h67v67h-67zM603 268h67v67h-67zM670 268h67v67h-67zM737 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e072%22 d=%22M804 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M871 268h67v67h-67zM938 268h67v67h-67zM1005 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0be%22 d=%22M1072 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1139 268h67v67h-67zM1206 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03c%22 d=%22M1273 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1340 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02a%22 d=%22M1407 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1474 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02f%22 d=%22M1541 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1608 268h67v67h-67zM1675 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02e%22 d=%22M1742 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1809 268h67v67h-67zM1876 268h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e017%22 d=%22M1943 268h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 335h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e0a8%22 d=%22M67 335h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 335h67v67h-67zM201 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e055%22 d=%22M268 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e008%22 d=%22M335 335h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e07c%22 d=%22M469 335h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 335h67v67h-67zM603 335h67v67h-67zM670 335h67v67h-67zM737 335h67v67h-67zM804 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c5%22 d=%22M871 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e082%22 d=%22M938 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e07a%22 d=%22M1005 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e04e%22 d=%22M1072 335h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1139 335h67v67h-67zM1206 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e076%22 d=%22M1273 335h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1340 335h67v67h-67zM1407 335h67v67h-67zM1474 335h67v67h-67zM1541 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b7%22 d=%22M1608 335h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1675 335h67v67h-67zM1742 335h67v67h-67zM1809 335h67v67h-67zM1876 335h67v67h-67zM1943 335h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b5%22 d=%22M0 402h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e07a%22 d=%22M67 402h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 402h67v67h-67zM201 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e065%22 d=%22M268 402h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M335 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e093%22 d=%22M402 402h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M469 402h67v67h-67zM536 402h67v67h-67zM603 402h67v67h-67zM670 402h67v67h-67zM737 402h67v67h-67zM804 402h67v67h-67zM871 402h67v67h-67zM938 402h67v67h-67zM1005 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e060%22 d=%22M1072 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e01a%22 d=%22M1139 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03e%22 d=%22M1206 402h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1273 402h67v67h-67zM1340 402h67v67h-67zM1407 402h67v67h-67zM1474 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b3%22 d=%22M1541 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e09c%22 d=%22M1608 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e09f%22 d=%22M1675 402h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1742 402h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e049%22 d=%22M1809 402h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1876 402h67v67h-67zM1943 402h67v67h-67zM0 469h67v67H0zM67 469h67v67H67z%22%2F%3E%3Cpath fill=%22%23adc8e039%22 d=%22M134 469h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M201 469h67v67h-67zM268 469h67v67h-67zM335 469h67v67h-67zM402 469h67v67h-67zM469 469h67v67h-67zM536 469h67v67h-67zM603 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e002%22 d=%22M670 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e00e%22 d=%22M737 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e007%22 d=%22M804 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e011%22 d=%22M871 469h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M938 469h67v67h-67zM1005 469h67v67h-67zM1072 469h67v67h-67zM1139 469h67v67h-67zM1206 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e004%22 d=%22M1273 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05c%22 d=%22M1340 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e07a%22 d=%22M1407 469h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1474 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e093%22 d=%22M1541 469h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1608 469h67v67h-67zM1675 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e019%22 d=%22M1742 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e049%22 d=%22M1809 469h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1876 469h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b0%22 d=%22M1943 469h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 536h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e058%22 d=%22M67 536h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 536h67v67h-67zM201 536h67v67h-67zM268 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02c%22 d=%22M335 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02b%22 d=%22M469 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e053%22 d=%22M603 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M670 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e09c%22 d=%22M737 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e04a%22 d=%22M804 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05a%22 d=%22M871 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M938 536h67v67h-67zM1005 536h67v67h-67zM1072 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e026%22 d=%22M1139 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1206 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e061%22 d=%22M1273 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1340 536h67v67h-67zM1407 536h67v67h-67zM1474 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03b%22 d=%22M1541 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1608 536h67v67h-67zM1675 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e098%22 d=%22M1742 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e014%22 d=%22M1809 536h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1876 536h67v67h-67zM1943 536h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e00f%22 d=%22M0 603h67v67H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M67 603h67v67H67zM134 603h67v67h-67zM201 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e059%22 d=%22M268 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c6%22 d=%22M335 603h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 603h67v67h-67zM469 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e01b%22 d=%22M536 603h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M603 603h67v67h-67zM670 603h67v67h-67zM737 603h67v67h-67zM804 603h67v67h-67zM871 603h67v67h-67zM938 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c1%22 d=%22M1005 603h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1072 603h67v67h-67zM1139 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e060%22 d=%22M1206 603h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1273 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e06d%22 d=%22M1340 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e060%22 d=%22M1407 603h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1474 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0ad%22 d=%22M1541 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e090%22 d=%22M1608 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a9%22 d=%22M1675 603h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1742 603h67v67h-67zM1809 603h67v67h-67zM1876 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e050%22 d=%22M1943 603h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0cb%22 d=%22M0 670h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e0ac%22 d=%22M67 670h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e06f%22 d=%22M201 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03c%22 d=%22M268 670h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M335 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e085%22 d=%22M402 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e009%22 d=%22M469 670h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 670h67v67h-67zM603 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e012%22 d=%22M670 670h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M737 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e00a%22 d=%22M804 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03b%22 d=%22M871 670h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M938 670h67v67h-67zM1005 670h67v67h-67zM1072 670h67v67h-67zM1139 670h67v67h-67zM1206 670h67v67h-67zM1273 670h67v67h-67zM1340 670h67v67h-67zM1407 670h67v67h-67zM1474 670h67v67h-67zM1541 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e086%22 d=%22M1608 670h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1675 670h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e071%22 d=%22M1742 670h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1809 670h67v67h-67zM1876 670h67v67h-67zM1943 670h67v67h-67zM0 737h67v67H0zM67 737h67v67H67zM134 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e01c%22 d=%22M201 737h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M268 737h67v67h-67zM335 737h67v67h-67zM402 737h67v67h-67zM469 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0ba%22 d=%22M536 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e06a%22 d=%22M603 737h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M670 737h67v67h-67zM737 737h67v67h-67zM804 737h67v67h-67zM871 737h67v67h-67zM938 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e07c%22 d=%22M1005 737h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1072 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e06a%22 d=%22M1139 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03f%22 d=%22M1206 737h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1273 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02a%22 d=%22M1340 737h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1407 737h67v67h-67zM1474 737h67v67h-67zM1541 737h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02c%22 d=%22M1608 737h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1675 737h67v67h-67zM1742 737h67v67h-67zM1809 737h67v67h-67zM1876 737h67v67h-67zM1943 737h67v67h-67zM0 804h67v67H0zM67 804h67v67H67z%22%2F%3E%3Cpath fill=%22%23adc8e017%22 d=%22M134 804h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M201 804h67v67h-67zM268 804h67v67h-67zM335 804h67v67h-67zM402 804h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c7%22 d=%22M469 804h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 804h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e07b%22 d=%22M603 804h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e064%22 d=%22M670 804h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e018%22 d=%22M737 804h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M804 804h67v67h-67zM871 804h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e03e%22 d=%22M938 804h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1005 804h67v67h-67zM1072 804h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05c%22 d=%22M1139 804h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1206 804h67v67h-67zM1273 804h67v67h-67zM1340 804h67v67h-67zM1407 804h67v67h-67zM1474 804h67v67h-67zM1541 804h67v67h-67zM1608 804h67v67h-67zM1675 804h67v67h-67zM1742 804h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a5%22 d=%22M1809 804h67v67h-67zM1876 804h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1943 804h67v67h-67zM0 871h67v67H0zM67 871h67v67H67zM134 871h67v67h-67zM201 871h67v67h-67zM268 871h67v67h-67zM335 871h67v67h-67zM402 871h67v67h-67zM469 871h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e01c%22 d=%22M536 871h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M603 871h67v67h-67zM670 871h67v67h-67zM737 871h67v67h-67zM804 871h67v67h-67zM871 871h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e025%22 d=%22M938 871h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e09e%22 d=%22M1005 871h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1072 871h67v67h-67zM1139 871h67v67h-67zM1206 871h67v67h-67zM1273 871h67v67h-67zM1340 871h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e018%22 d=%22M1407 871h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e064%22 d=%22M1474 871h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1541 871h67v67h-67zM1608 871h67v67h-67zM1675 871h67v67h-67zM1742 871h67v67h-67zM1809 871h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e036%22 d=%22M1876 871h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e006%22 d=%22M1943 871h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M0 938h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e011%22 d=%22M67 938h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b1%22 d=%22M201 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e06f%22 d=%22M268 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e06c%22 d=%22M335 938h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 938h67v67h-67zM469 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0af%22 d=%22M536 938h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M603 938h67v67h-67zM670 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e080%22 d=%22M737 938h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M804 938h67v67h-67zM871 938h67v67h-67zM938 938h67v67h-67zM1005 938h67v67h-67zM1072 938h67v67h-67zM1139 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c1%22 d=%22M1206 938h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1273 938h67v67h-67zM1340 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e036%22 d=%22M1407 938h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1474 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e009%22 d=%22M1541 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05c%22 d=%22M1608 938h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1675 938h67v67h-67zM1742 938h67v67h-67zM1809 938h67v67h-67zM1876 938h67v67h-67zM1943 938h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e004%22 d=%22M0 1005h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e067%22 d=%22M67 1005h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 1005h67v67h-67zM201 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0ae%22 d=%22M268 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e077%22 d=%22M335 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M402 1005h67v67h-67zM469 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0bc%22 d=%22M536 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e052%22 d=%22M603 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M670 1005h67v67h-67zM737 1005h67v67h-67zM804 1005h67v67h-67zM871 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c1%22 d=%22M938 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e075%22 d=%22M1005 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1072 1005h67v67h-67zM1139 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e016%22 d=%22M1206 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1273 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a4%22 d=%22M1340 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c3%22 d=%22M1407 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c5%22 d=%22M1474 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05c%22 d=%22M1541 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1608 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a9%22 d=%22M1675 1005h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1742 1005h67v67h-67zM1809 1005h67v67h-67zM1876 1005h67v67h-67zM1943 1005h67v67h-67zM0 1072h67v67H0zM67 1072h67v67H67zM134 1072h67v67h-67zM201 1072h67v67h-67zM268 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e053%22 d=%22M335 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05e%22 d=%22M402 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M469 1072h67v67h-67zM536 1072h67v67h-67zM603 1072h67v67h-67zM670 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e093%22 d=%22M737 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M804 1072h67v67h-67zM871 1072h67v67h-67zM938 1072h67v67h-67zM1005 1072h67v67h-67zM1072 1072h67v67h-67zM1139 1072h67v67h-67zM1206 1072h67v67h-67zM1273 1072h67v67h-67zM1340 1072h67v67h-67zM1407 1072h67v67h-67zM1474 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05d%22 d=%22M1541 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e028%22 d=%22M1608 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1675 1072h67v67h-67zM1742 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0ac%22 d=%22M1809 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a4%22 d=%22M1876 1072h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1943 1072h67v67h-67zM0 1139h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e067%22 d=%22M67 1139h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e08a%22 d=%22M201 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M268 1139h67v67h-67zM335 1139h67v67h-67zM402 1139h67v67h-67zM469 1139h67v67h-67zM536 1139h67v67h-67zM603 1139h67v67h-67zM670 1139h67v67h-67zM737 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e077%22 d=%22M804 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M871 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0b4%22 d=%22M938 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1005 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e015%22 d=%22M1072 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e057%22 d=%22M1139 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1206 1139h67v67h-67zM1273 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e08d%22 d=%22M1340 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1407 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e001%22 d=%22M1474 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1541 1139h67v67h-67zM1608 1139h67v67h-67zM1675 1139h67v67h-67zM1742 1139h67v67h-67zM1809 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e032%22 d=%22M1876 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1943 1139h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e05d%22 d=%22M0 1206h67v67H0z%22%2F%3E%3Cpath fill=%22none%22 d=%22M67 1206h67v67H67zM134 1206h67v67h-67zM201 1206h67v67h-67zM268 1206h67v67h-67zM335 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e08a%22 d=%22M402 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a3%22 d=%22M469 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M536 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e02e%22 d=%22M603 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e064%22 d=%22M670 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M737 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e00c%22 d=%22M804 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M871 1206h67v67h-67zM938 1206h67v67h-67zM1005 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e076%22 d=%22M1072 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e084%22 d=%22M1139 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1206 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0a6%22 d=%22M1273 1206h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1340 1206h67v67h-67zM1407 1206h67v67h-67zM1474 1206h67v67h-67zM1541 1206h67v67h-67zM1608 1206h67v67h-67zM1675 1206h67v67h-67zM1742 1206h67v67h-67zM1809 1206h67v67h-67zM1876 1206h67v67h-67zM1943 1206h67v67h-67zM0 1273h67v67H0zM67 1273h67v67H67zM134 1273h67v67h-67zM201 1273h67v67h-67zM268 1273h67v67h-67zM335 1273h67v67h-67zM402 1273h67v67h-67zM469 1273h67v67h-67zM536 1273h67v67h-67zM603 1273h67v67h-67zM670 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0ca%22 d=%22M737 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M804 1273h67v67h-67zM871 1273h67v67h-67zM938 1273h67v67h-67zM1005 1273h67v67h-67zM1072 1273h67v67h-67zM1139 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e023%22 d=%22M1206 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1273 1273h67v67h-67zM1340 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e063%22 d=%22M1407 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1474 1273h67v67h-67zM1541 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e022%22 d=%22M1608 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e0c8%22 d=%22M1675 1273h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M1742 1273h67v67h-67zM1809 1273h67v67h-67zM1876 1273h67v67h-67zM1943 1273h67v67h-67zM0 1340h67v67H0z%22%2F%3E%3Cpath fill=%22%23adc8e097%22 d=%22M67 1340h67v67H67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M134 1340h67v67h-67zM201 1340h67v67h-67zM268 1340h67v67h-67zM335 1340h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e055%22 d=%22M402 1340h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M469 1340h67v67h-67zM536 1340h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e042%22 d=%22M603 1340h67v67h-67z%22%2F%3E%3Cpath fill=%22none%22 d=%22M670 1340h67v67h-67zM737 1340h67v67h-67zM804 1340h67v67h-67zM871 1340h67v67h-67zM938 1340h67v67h-67zM1005 1340h67v67h-67zM1072 1340h67v67h-67zM1139 1340h67v67h-67zM1206 1340h67v67h-67zM1273 1340h67v67h-67zM1340 1340h67v67h-67zM1407 1340h67v67h-67zM1474 1340h67v67h-67zM1541 1340h67v67h-67zM1608 1340h67v67h-67zM1675 1340h67v67h-67zM1742 1340h67v67h-67zM1809 1340h67v67h-67zM1876 1340h67v67h-67z%22%2F%3E%3Cpath fill=%22%23adc8e01e%22 d=%22M1943 1340h67v67h-67z%22%2F%3E%3C%2Fg%3E%3Cdefs%3E%3CradialGradient id=%22a%22%3E%3Cstop offset=%2250%25%22 stop-color=%22%23fff%22 stop-opacity=%220%22%2F%3E%3Cstop offset=%221%22 stop-color=%22%23fff%22 stop-opacity=%22.5%22%2F%3E%3C%2FradialGradient%3E%3C%2Fdefs%3E%3C%2Fsvg%3E");
+
+
+}
+
+ul li {
+    list-style: none;
+}
+
+a {
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+.navbar .container1 .logo
+{
+    float: left;
+    text-align: center;
+    font-size: 45px;
+    width: 10rem;
+}
+
+p,
+li {
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+}
+
+header {
+    word-spacing: 1.1rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 3rem;
+}
+
+h1 {
+    word-spacing: 1.1rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 3rem;
+    padding-top: 2.2rem;
+}
+
+h2,
+h3 {
+    word-spacing: 1.1rem;
+    letter-spacing: 0.1em;
+    font-weight: 600;
+    font-size: 1.6rem;
+}
+
+/* #################### utility classes ################ */
+
+.container1 {
+    max-width: 1150px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.lg-heading {
+    font-size: 3.5rem;
+}
+
+.md-heading {
+    font-size: 2.2rem;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #000000;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-gray {
+    color: #555555;
+}
+
+.bg-dark {
+    background-color: #263238;
+}
+
+
+.navbar {
+    /* border: 3px solid white; */
+    padding: 2rem;
+}
+
+.logo,
+.header .navbar a {
+    display: inline;
+    color: rgb(255, 255, 255);
+}
+
+.navbar .logo {
+    margin: 0.5rem;
+    float: left;
+    font-size: 3.5rem;
+}
+
+.navbar .nav-items {
+    float: right;
+    margin-top: 3rem;
+}
+
+.navbar .nav-item {
+    display: inline-block;
+    padding: 1rem;
+    text-transform: uppercase;
+}
+
+.navbar a:link,
+.navbar a:visited {
+    color: rgb(255, 255, 255);
+}
+
+.navbar a:hover {
+    border-bottom: 2.2px solid #ffffff;
+}
+
+.navbar a {
+    padding-bottom: 0.2rem;
+}
+
+.navbar::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############# footer styling ############## */
+.footer {
+    background: #263238;
+    color: #f4f4f4;
+    align-items: end;
+    text-align: center;
+    padding: 3rem;
+    margin-top: 0rem;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.social-media-links i {
+    margin: 2rem;
+}
+
+.head1 {
+    padding: 2rem;
+    text-align: center;
+}
+
+.pos {
+    position: relative;
+    min-height: 100%;
+    margin: 0;
+    padding-bottom: 3rem;
+    bottom: 0;
+}
+
+.container {
+    position: relative;
+    max-width: 1150px;
+    width: 90%;
+    border-radius: 6px;
+    padding: 30px;
+    margin: 3rem auto;
+    background-color: #ffffff;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    align-items: center;
+}
+
+.container header {
+    position: relative;
+    font-size: 25px;
+    font-weight: 600;
+    color: #333;
+    background-color: #cfe1fd;
+    padding: 2rem;
+}
+
+.container header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 20px;
+    left: 20px;
+    height: 3px;
+    width: 200px;
+    border-radius: 8px;
+    background-color: #4070f4;
+}
+
+.container form {
+    position: relative;
+    margin-top: 16px;
+    min-height: 800px;
+    overflow-x: hidden;
+    overflow-y: visible;
+}
+
+form::-webkit-scrollbar {
+    display: none;
+}
+
+.arrow {
+    position: absolute;
+    top: 40rem;
+    right: 3rem;
+    text-align: center;
+}
+
+.fa {
+    font-size: 30px;
+    padding: 0.5rem;
+    text-align: center;
+}
+
+.container form .form {
+    position: absolute;
+    background-color: #fff;
+    transition: 0.3s ease;
+}
+
+.container form .form.second {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(100%);
+}
+
+form.secActive .form.second {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(0);
+}
+
+form.secActive .form.first {
+    opacity: 0;
+    pointer-events: none;
+    transform: translateX(-100%);
+}
+
+.container form .title {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 0.2rem;
+    margin: 6px 0;
+    color: #333;
+}
+
+.container form .fields {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+form .fields .input-field {
+    display: flex;
+    width: calc(100% / 3 - 15px);
+    flex-direction: column;
+    margin: 4px 0;
+}
+
+.input-field label {
+    font-size: 13px;
+    font-weight: 400;
+    color: #2e2e2e;
+}
+
+.input-field .showpass .left-p
+{
+    float: left;
+    width: 65%;
+}
+
+.input-field .showpass .right-p
+{
+    float: right;
+    width: 35%;
+}
+
+.input-field .showpass .left-p input
+{
+    /* width: 50%; */
+}
+
+.input-field .showpass input[type="checkbox"]
+{
+    width: 16px;
+    margin-top: 2.5rem;
+}
+
+.input-field .showpass .left
+{
+    float: left;
+    margin: 0;
+    text-align: center;
+    padding-left: 0.2rem;
+    padding-right: 0.1rem;
+}
+
+.input-field .showpass .right
+{
+    float: left;
+    text-align: center;
+    margin-top: 2.2rem;
+}
+
+
+.input-field input,
+select {
+    outline: none;
+    font-size: 14px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 5px;
+    border: 1px solid #a09f9f;
+    padding: 0 15px;
+    height: 42px;
+    margin: 8px 0;
+}
+
+.input-field input :focus,
+.input-field select:focus {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.13);
+}
+
+.input-field select,
+.input-field input[type="submit"],
+.input-field input[type="date"] {
+    color: #453737;
+}
+
+.input-field input[type="date"]:valid {
+    color: #000000;
+}
+
+.container form button,
+.backBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 45px;
+    max-width: 200px;
+    width: 100%;
+    border: none;
+    outline: none;
+    color: #fff;
+    border-radius: 5px;
+    margin: 25px 0;
+    background-color: #4070f4;
+    transition: all 0.3s linear;
+    cursor: pointer;
+}
+
+.container form .btnText {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+form button:hover {
+    background-color: #265df2;
+}
+
+form button i,
+form .backBtn i {
+    margin: 0 6px;
+}
+
+form .backBtn i {
+    transform: rotate(180deg);
+}
+
+form .buttons {
+    display: flex;
+    align-items: center;
+}
+
+form .buttons button,
+.backBtn {
+    margin-right: 14px;
+}
+
+
+.foot {
+    margin-top: 3rem;
+    text-align: center;
+    font-size: 13px;
+}
+
+.butt {
+    padding: 0rem 45rem;
+    font-size: 13px;
+}
+
+.button1 {
+    background-image: linear-gradient(to right, #314755 0%, #26a0da 51%, #314755 100%);
+    margin: 10px;
+    padding: 15px 45px;
+    text-align: center;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background-size: 200% auto;
+    color: white;
+    box-shadow: 0 0 20px #eee;
+    border-radius: 10px;
+    display: block;
+}
+
+.button1:hover {
+    background-position: right center;
+    /* change the direction of the change here */
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+
+@media (max-width: 750px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header {
+        background-size: 100% 100%;
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+    }
+
+    .container form {
+        overflow-y: scroll;
+    }
+
+    .container form::-webkit-scrollbar {
+        display: none;
+    }
+
+    form .fields .input-field {
+        width: calc(100% / 2 - 15px);
+    }
+}
+
+@media (max-width: 550px) {
+
+    html {
+        font-size: 50%;
+    }
+
+    .navbar .nav-items,
+    .navbar .logo {
+        float: none;
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .header {
+        background-size: 100% 100%;
+        text-align: center;
+        width: 100%;
+        height: fit-content;
+    }
+
+    form .fields .input-field {
+        width: 100%;
+    }
+}

@@ -1,0 +1,77 @@
+.donate
+{
+    font-family: 'Trebuchet MS', sans-serif;
+    background-image: url("../images/donate2.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+    height: 110vh;
+    margin-top:-1.5%;
+    margin-bottom: 1.5%;
+    color: white;
+    text-align: center;
+    padding: 5px;
+}
+.donate .donate_container
+{
+    background-color: black;
+    opacity:80%;
+    text-align: center;
+    margin: 0% 20% 0% 20%;
+    padding-top:10%;
+    padding-bottom: 10%;
+}
+.donate .donate_container h1
+{
+    color: rgb(79, 255, 88);
+    line-height: 100px;
+}
+.donate .donate_container p
+{
+    font-size: large;
+    width:80%;
+    text-align: center;
+    padding-left:20%;
+}
+.donate .donate_container .second
+{
+    padding-bottom: 10%;
+}
+.donate .side_btn a
+{
+    text-decoration: none;
+    font-size: 120%;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Trebuchet MS', sans-serif;
+    border: 2px double whitesmoke;
+    transition: 0.5s;
+}
+.donate .side_btn a:hover
+{
+    background-color: white;
+    color: black;
+    font-weight:bolder;
+    border: none;
+    border: 4px solid green;
+    transition:0.5s;
+}
+
+/* ############# footer styling ############## */
+.footer {
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.social-media-links {
+    margin: 2rem 2rem;
+}
+
+.social-media-links i {
+    margin: 2rem;
+}

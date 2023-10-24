@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Rubik&display=swap');
+
+
+*{
+    margin : 0;
+    padding : 0;
+    box-sizing: border-box;
+}
+
+
+/*############################# Html Element Styling ####################################*/
+
+html
+{
+    font-size: 62.5%;
+}
+
+body
+{
+    font-family: 'Montserrat',sans-serif;
+    line-height: 1.7;
+    background-color: aliceblue;
+}
+/*################################## Utility Tools ############################### */
+
+h2 {
+    font-size: 40px;
+    margin: 0px;
+    text-align: center;
+    color: #333;
+    padding-top: 3rem;
+}
+.container {
+    max-width: 1300px;
+    margin: 0px 0px;
+    padding: 20px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.text-red {
+    color: #e63946;
+}
+
+.text-light {
+    color: #000000;
+}
+
+.text-black {
+    color: #333;
+}
+
+.text-gray {
+    color: #555555;
+}
+
+/* Header Styling */
+
+#header
+{
+    background-color: black;
+}
+
+#header .navbar img,
+#header .navbar h1,
+#header .navbar ul li,
+#header .navbar ul li a
+{
+    width: 10rem;
+    color: white;
+}
+
+#header .navbar h1
+{
+    margin-bottom: 0.25em;
+    margin-top: 0.25em;
+}
+
+.navbar
+{
+    /* border: 4px solid red; */
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0rem 13rem;
+}
+
+#header .navbar .logo
+{
+    float: left;
+    text-align: center;
+    font-size: 45px;
+}
+
+#header .navbar .nav-item
+{
+    float: right;
+    margin-top: 3.8rem;
+    text-transform: uppercase;
+}
+
+#header .navbar .nav-items1
+{
+    display: inline-block;
+    font-weight: 500;
+}
+
+.navbar a:link,
+.navbar a:visited
+{
+    color: #f4f4f4;
+}
+
+.navbar a:hover
+{
+    border-bottom: 1.8px solid white;
+    padding-bottom: 0.3rem;
+}
+
+.navbar::after
+{
+    content: ' ';
+    display: block;
+    clear: both;
+}
+
+
+ul li
+{
+    list-style: none;
+}
+
+a
+{
+    font-size: 1.6rem;
+    text-decoration: none;
+}
+
+p, li
+{
+    font-size: 1.6rem;
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+}
+
+h1,h2,h3
+{
+    margin-bottom: 0.5em;
+    letter-spacing: 0.15em;
+    font-weight: 900;
+    
+}
+
+/* main */
+
+/* .front
+{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    padding: 0.5%;
+    border: 2px solid red;
+    align-items: center;
+    justify-content: center;
+} */
+
+/* .back-video
+{
+    position: absolute;
+    bottom: 0;
+    right: auto;
+    z-index: -1;
+} */
+
+.showcase {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: repeat;
+}
+
+.row {
+    height: 500px;
+    background-color: #f0f2f4;
+    /* box-shadow: 5px 5px 20px 0px #9b9a9ab4; */
+    /* border-radius: 30px; */
+}
+
+.row1,
+.row2,
+.row3 {
+    margin-bottom: 8rem;
+}
+
+.row1 .imgbox,
+.row2 .textbox,
+.row3 .imgbox,
+.row4 .textbox {
+    float: left;
+    width: 50%;
+}
+
+.row2 .imgbox,
+.row1 .textbox,
+.row4 .imgbox,
+.row3 .textbox {
+    float: right;
+    width: 50%;
+}
+
+.row .imgbox {
+    height: 100%;
+    background-position: center;
+}
+
+.row .textbox {
+    height: 100%;
+    padding: 1.5rem 2.5rem;
+    text-align: justify;
+    word-spacing: 0.1px;
+    /* text-align: inherit; */
+    font-size: 5px;
+    font-weight: 400;
+}
+
+.row .textbox h2 
+{
+    font-size: 25px;
+    text-align: center;  
+}
+
+.row .imgbox img {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.row::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+/* ############# footer styling ############## */
+.footer {
+    background: #263238;
+    color: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+    padding-bottom: 5rem;
+}
+
+.social-media-links {
+    margin: 2rem 2rem;
+}
+
+.social-media-links i {
+    margin: 2rem;
+}

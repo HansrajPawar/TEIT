@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animal Registration</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <script src="https://kit.fontawesome.com/ca70c1521e.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="../styles/Registration.css">
+  <!----===== Iconscout CSS ===== -->
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="icon" href="../images/logo.png">
+  <script type='module' src="../src/config.js"></script>
+  <script src="bundle.js"></script>
+  <script>
+    function verifiedOwnerEmail() {
+      alert("OTP successfully sent on your Email")
+      document.getElementById("otp_email").style.display = "block";
+      document.getElementById("otp_e").style.display = "block";
+    }
+    function verifiedPhoneNo() {
+      alert("OTP successfully sent on your Mobile no")
+      document.getElementById("ver1").style.display = "block";
+      document.getElementById("ver2").style.display = "block";
+    }
+
+    function verifiedSocietyEmail() {
+      alert("OTP successfully sent on your Email")
+      document.getElementById("otp_email1").style.display = "block";
+      document.getElementById("otp_e1").style.display = "block";
+    }
+
+    function pop_up() {
+      alert("Your Request for Registration has been sent Successfully !!!")
+    }
+
+    function myFunction() {
+      var x = document.getElementById("o_password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+
+    function PassFunction() {
+      var x = document.getElementById("o_confirm_password");
+      if (x.type === "password") {
+        x.type = "text";
+      } else {
+        x.type = "password";
+      }
+    }
+  </script>
+</head>
+
+<body>
+
+  <nav class="navbar bg-dark">
+    <div class="container1">
+      <img class="logo" style="margin-right: 1em;" src="../images/Logo.png" alt="SOS logo">
+      <h1 class="logo lg-heading">SOS</h1>
+      <ul class="nav-items">
+        <li class="nav-item"><a href="../SaveOurStrays.html">Home</a></li>
+        <li class='nav-item'><a href="./about.html">About Us</a></li>
+        <li class='nav-item'><a href="../pages/contact us.html">Contact Us</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="arrow">
+    <a id="up" href="#dd">
+      <p>Scroll Up</p><i class="fa fa-arrow-up"></i>
+    </a><br>
+    <a href="#ed"><i class="fa fa-arrow-down"></i>
+      <p>Scroll Down</p>
+    </a>
+
+  </div>
+
+  <main>
+    <div class="container">
+
+      <header>Registration</header>
+
+      <form class="societyRegistration">
+
+        <div class="form first">
+
+
+          <div class="details personal">
+
+            <span class="title" id="dd">Owner Details</span>
+
+            <div class="fields">
+
+              <div class="input-field">
+                <label for="o_fname">First Name</label>
+                <input type="text" id="o_fname" placeholder="First Name" class="box box1" required>
+              </div>
+
+              <div class="input-field">
+                <label for="o_mname">Middle Name</label>
+                <input type="text" id="o_mname" placeholder="Middle Name" class="box box2" required>
+              </div>
+
+              <div class="input-field">
+                <label for="o_lname">Last Name</label>
+                <input type="text" id="o_lname" placeholder="Last Name" class="box box3" required>
+              </div>
+
+
+              <div class="input-field">
+                <label for="o_email">Email</label>
+                <input type="email" id="o_email" placeholder="Your Email" required>
+                <input type="submit" onclick="verifiedOwnerEmail()" value="Generate OTP " required>
+
+                <input type="text" style="display: none;" maxlength="6" id="otp_email" required>
+                <input type="submit" style="display: none;" id="otp_e" value="Confirm Email" required>
+
+              </div>
+
+              <div class="input-field">
+                <label for="o_phoneno">Phone No</label>
+                <input type="tel" id="o_phoneno" placeholder="Your Phone No" required>
+                <input type="submit" onclick="verifiedPhoneNo()" value="Generate OTP" required>
+                <input type="text" style="display:none;" maxlength="6" id="ver1" required>
+                <input type="submit" style="display:none;" id="ver2" value="Confirm Phone No" required>
+              </div>
+
+              <div class="input-field">
+                <div class="showpass">
+                  <div class="left-p">
+                    <label for="o_password">Password</label><br>
+                    <input type="password" id="o_password" placeholder="Password"
+                      style="font-size: 13px;font-weight: 500; width: 95%;" required><br>
+                  </div>
+
+                  <div class="right-p">
+                    <div class="left">
+                      <input type="checkbox" onclick="myFunction()" id="s">
+                    </div>
+                    <br>&nbsp;
+                    <div class="right">
+                      <label for="s" style="font-size: 12px;">Show Password</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+
+              <div class="input-field">
+                <div class="showpass">
+                  <div class="left-p">
+                    <label for="o_confirm_password">Confirm Password</label>
+                    <input type="password" id="o_confirm_password" placeholder="Confirm Password"
+                      style="font-size: 13px;font-weight: 500; width: 95%;" required><br>
+                  </div>
+
+                  <div class="right-p">
+                    <div class="left">
+                      <input type="checkbox" onclick="PassFunction()" id="sp">
+                    </div>
+                    <br>&nbsp;
+                    <div class="right">
+                      <label for="sp" style="font-size: 12px;">Show Password</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="input-field">
+                <label>Gender</label>
+                <select required id="o_gender">
+                  <option disabled selected>Select Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                  <option>Others</option>
+                </select>
+              </div>
+
+              <div class="input-field" id="o_occupation">
+                <label>Occupation</label>
+                <input type="text" placeholder="Enter your occupation" id="o_occupation" required>
+              </div>
+
+              <div class="input-field">
+                <label for="o_dob">Date of Birth :</label>
+                <input type="date" id="o_dob" required>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="details ID">
+
+            <span class="title">Address Details</span>
+
+            <div class="fields">
+
+              <div class="input-field">
+                <label>Address</label>
+                <input type="text" placeholder="Enter your Address" id="o_address" required>
+              </div>
+
+              <div class="input-field">
+                <label for="country-state">State</label>
+                <select id="o_state" name="country-state" required>
+                  <option value="Andaman and Nicobar Islands">Andaman and Nicobar Islands</option>
+                  <option value="Andhra Pradesh">Andhra Pradesh</option>
+                  <option value="Arunachal Pradesh">Arunachal Pradesh</option>
+                  <option value="Assam">Assam</option>
+                  <option value="Bihar">Bihar</option>
+                  <option value="Chandigarh">Chandigarh</option>
+                  <option value="Chhattisgarh">Chhattisgarh</option>
+                  <option value="Dadra and Nagar Haveli">Dadra and Nagar Haveli</option>
+                  <option value="Daman and Diu">Daman and Diu</option>
+                  <option value="Delhi">Delhi</option>
+                  <option value="Goa">Goa</option>
+                  <option value="Gujarat">Gujarat</option>
+                  <option value="Haryana">Haryana</option>
+                  <option value="Himachal Pradesh">Himachal Pradesh</option>
+                  <option value="Jammu and Kashmir">Jammu and Kashmir</option>
+                  <option value="Jharkhand">Jharkhand</option>
+                  <option value="Karnataka">Karnataka</option>
+                  <option value="Kerala">Kerala</option>
+                  <option value="Ladakh">Ladakh</option>
+                  <option value="Lakshadweep">Lakshadweep</option>
+                  <option value="Madhya Pradesh">Madhya Pradesh</option>
+                  <option value="Maharashtra">Maharashtra</option>
+                  <option value="Manipur">Manipur</option>
+                  <option value="Meghalaya">Meghalaya</option>
+                  <option value="Mizoram">Mizoram</option>
+                  <option value="Nagaland">Nagaland</option>
+                  <option value="Odisha">Odisha</option>
+                  <option value="Puducherry">Puducherry</option>
+                  <option value="Punjab">Punjab</option>
+                  <option value="Rajasthan">Rajasthan</option>
+                  <option value="Sikkim">Sikkim</option>
+                  <option value="Tamil Nadu">Tamil Nadu</option>
+                  <option value="Telangana">Telangana</option>
+                  <option value="Tripura">Tripura</option>
+                  <option value="Uttar Pradesh">Uttar Pradesh</option>
+                  <option value="Uttarakhand">Uttarakhand</option>
+                  <option value="West Bengal">West Bengal</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label>District</label>
+                <input type="text" id="o_district" placeholder="District" required>
+              </div>
+
+              <div class="input-field">
+                <label>Pincode</label>
+                <input type="number" id="o_pincode" placeholder="pincode/zipcode" required>
+              </div>
+
+            </div>
+
+            <button class="nextBtn">
+              <span class="btnText">Next</span>
+              <i class="fa-solid fa-caret-right fa-2x" id="ed"></i>
+            </button>
+
+          </div>
+        </div>
+
+
+
+        <div class="form second">
+
+          <div class="details address">
+
+            <span class="title">Animal Details</span>
+            <div class="fields">
+
+              <div class="input-field">
+                <label>Animal's Name</label>
+                <input type="text" id="s_name" placeholder="Animal Name" required>
+              </div>
+
+              <div class="input-field">
+                <label>Animal's Species</label>
+                <input type="text" id="a_name" placeholder="Animal Species" required>
+              </div>
+
+              <div class="input-field">
+                <label>Animal's Breed</label>
+                <input type="text" id="a_name" placeholder="Animal's Breed " required>
+              </div>
+
+              <div class="input-field">
+                <label for="s_address">Animal Age</label>
+                <input name="address" id="s_address" type="text" placeholder="Enter Animal Age" required>
+              </div>
+
+              <div class="input-field">
+                <label>Gender</label>
+                <select required id="a_gender">
+                  <option disabled selected>Select Gender</option>
+                  <option>Male</option>
+                  <option>Female</option>
+                </select>
+              </div>
+
+              <div class="input-field">
+                <label for="o_dob">Date of Birth :</label>
+                <input type="date" id="a_dob" required>
+              </div>
+
+              <div class="input-field">
+                <label for="s_district">Animal's Color/Markings</label>
+                <input type="text" id="s_district" placeholder="Animal's Color/Markings" required>
+              </div>
+
+              <div class="input-field">
+                <label for="s_pincode">Animal's Weight</label>
+                <input type="number" id="s_pincode" placeholder="Animal's Weight">
+              </div>
+
+            </div>
+
+          </div>
+
+
+
+          <div class="details family">
+
+            <div class="fields">
+
+              <div class="input-field">
+                <label for="ownerdoc">Ownership Document</label>
+                <input id="ownerdoc" type="file" name="o_doc" accept=".png,.jpg,.jpeg,.pdf" required>
+              </div>
+
+              <!-- <div class="input-field">
+                <label for="s_phoneno">Phone No</label>
+                <input type="tel" id="s_phoneno" placeholder="Society Contact Information" required>
+              </div> -->
+
+              <!-- <div class="input-field">
+                <label for="s_date">Society Founding Date</label>
+                <input type="date" id="s_date" required>
+              </div>
+
+              <div class="input-field">
+                <label for="s_admins">Total Society Administratives</label>
+                <select id="s_admins" required>
+                  <option value="1">1</option>
+                  <option value="2">2</option>
+                  <option value="3">3</option>
+                  <option value="4">4</option>
+                  <option value="5">5</option>
+                </select>
+              </div> -->
+
+              <div class="input-field">
+                <label for="s_email"></label>
+                <input type="email" id="s_email" placeholder="Your Email" required>
+                <input type="submit" onclick="verifiedSocietyEmail()" value="Generate OTP" required>
+                <input type="text" style="display: none;" maxlength="6" id="otp_email1" required>
+                <input type="submit" style="display: none;" id="otp_e1" value="Confirm Email" required>
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <div class="foot">
+            <input type="checkbox" id="discription1">
+
+            <label for="discription1"><strong>Agree to the Terms and Conditions and <a
+                  href="under-development.html">Privacy
+                  Policy</strong></a></label><br><br>
+
+            <input type="checkbox" id="discription"> <label for="discription">I allow my information to be used for
+              future campaigns</label>
+            <div class="butt">
+              <button style="font-weight: 600;background-color:turquoise; border: solid; border-radius: 30px;"
+                value="Sign up" onclick="pop_up()" class="button1">Submit</button>
+
+              <button type="reset"
+                style="font-weight: 600; background-color:turquoise; border: solid;border-radius: 30px;"
+                class="button1">Reset Form</button>
+            </div>
+            <p><strong>Already Have an Account <a href="login.html" target="_blank">Log in</a> here</strong></p>
+          </div>
+
+        </div>
+      </form>
+
+    </div>
+
+    <div class="pos">
+    </div>
+    <script src="../src/script.js"></script>
+
+  </main>
+  <section class="footer">
+    <div class="social-media-links">
+      <i class="fab fa-facebook fa-4x"></i>
+      <i class="fab fa-twitter fa-4x"></i>
+      <i class="fab fa-instagram fa-4x"></i>
+    </div>
+    <p>SOS &copy; 2023, All Rights Reserved</p>
+  </section>
+
+  <script>
+    function checkPasswordMatch() {
+      const passwordField = document.getElementById('o_password');
+      const confirmPasswordField = document.getElementById('o_confirm_password');
+      const password = passwordField.value;
+      const confirmPassword = confirmPasswordField.value;
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please re-enter.");
+        passwordField.value = ''; // Reset password field
+        confirmPasswordField.value = ''; // Reset confirm password field
+        return false; // Prevent form submission
+      }
+
+      return true; // Allow form submission
+    }
+
+    document.getElementById('o_confirm_password').addEventListener('blur', checkPasswordMatch);
+
+    document.getElementById('reg-society').addEventListener('submit', function (event) {
+      if (!checkPasswordMatch()) {
+        event.preventDefault(); // Prevent form submission
+      }
+    });
+  </script>
+</body>
+
+</html>
