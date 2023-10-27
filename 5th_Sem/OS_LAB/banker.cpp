@@ -84,7 +84,7 @@ int main()
 	return 0;
 }
 // Output:
-// om@ryzu:/mnt/d/TE_1sem/Labs/osl/05$ ./a.out
+// hans@ryzu:/mnt/d/TE_1sem/Labs/osl/05$ ./a.out
 // Enter Number of proceses: 5
 // Enter the total Number of resources of each type (A,B,C): 10 5 7
 // Enter Allocated resources:
