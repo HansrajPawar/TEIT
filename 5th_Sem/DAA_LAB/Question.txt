@@ -1,0 +1,163 @@
+Basic Information	What is your name?	Text								
+Basic Information	Date of Birth?	Numeric								
+Basic Information	Age group?	Choice	13	13-23	24-35	36-50	>50			
+Basic Information	Gender?	Choice	Male	Female	Trans					
+Basic Information	Belong to which Background?	Choice	Rural	Urban	Metropolitian	NRI				
+Basic Information	What is your current marital status?	Choice	Married	Unmaried	Divorce					
+Basic Information	"How many children do you have, if any?"	Numeric								
+Basic Information	Physically handicapped	Choice	Yes							
+Basic Information	What is your current profession or occupation?	Text								
+Basic Information	What is your highest level of education?	Choice	Primary	Secondary	Graduation	Postgraduation	Doctorate			
+Basic Information	What is your current  Height in inches?	Numeric								
+Basic Information	What is your current weight in kilograms?	Numeric								
+Basic Information	How many members are there in your family?	Numeric								
+Basic Information	Type of family	Choice	Nuclear	Joint	Alone					
+Nature	Select a Character Suited to You:	Choice	Exrovert	introvert	Ambivert	Stubborn	Short tempered			
+Nature	Select a personality Suited to You:	Choice	Outspoken	Perso	Diplomatic	People Pleaser	Overthinker			
+Nature	How do you usually approach problem-solving?	Choice	Optimistic	Pessimistic	Realistic	Idealistic				
+Nature	How would you describe your behavior and your overall perspective on facing life's challenges?	Choice	Adventurer	Adventurer or Risk with care	In comfort zone					
+Nature	How do you typically manage your time to ensure efficiency and productivity in your daily life?	Choice	Lazy	Well Planned but not managed with time	Well managed with time					
+Nature	Kindnessn what ways do you express kindness and compassion in your interactions with others?	Choice	Forgive yourself	Hard to Forgive Others	Punish					
+Nature	Do you like to take responsibilities?	Choice	Yes	No	Sometime					
+Nature	How do you remember and recall information efficiently?	Choice	Forget day to day things	Remember old time stuff	Gets overthings easily					
+Nature	Do you find yourself inclined towards leadership roles?	Choice	Yes	No	Sometime					
+Nature	Do you actively engage in and support teamwork and collaboration in group settings?	Choice	Yes	No	Sometime					
+Nature	Do you tend to experience frustration when things don't go as planned?	Choice	Yes	No	Sometime					
+Family	Are you staying with family ?	Choice	Yes	No						
+Family	What does your family mean to you?	Text								
+Family	How is your bonding with family members?	Choice	Strong	Cordial	Connected	Just ok	Not ok			
+Family	"
+
+Could you provide insights into the atmosphere within your family and the quality of communication with family members?"	Choice	Open	Moderate/if required	Not at all					
+Family	How do you feel when family member gives instructions?	Choice	Like	Don't like	Sometimes ok					
+Family	Is there anyone in family with whom you can discuss your trouble/problem?	Choice	Yes	No						
+Social Circle	Is there anyone you can count on when you are trouble/problem?	Text								
+Social Circle	What kind of social circle does he/she mingle with?	Text								
+Social Circle	Are you a person who prefers to be known as smart or kind?	Choice	Yes	No						
+Social Circle	What do you look for in your friends?	Text								
+Social Circle	How do you spend your free time?	Text								
+Social Circle	Do you spend a lot of time on social media? how much ?	Choice	1-2 hrs	3-4 hrs	5-7 hrs	  8-10 hrs				
+Social Circle	"What kind of activities do you like to indulge in social media? (e.g. watching reels, movies, listening songs, chatting, playing games etc.)"	Text								
+Personal Interest	Hobbies other than job/study.	Text								
+Personal Interest	Do you have an interest in reading?	Choice	Yes	No						
+Personal Interest	Are you interested in academic studies?	Choice	Yes	No						
+Personal Interest	"Do you have a favorite character from literature, movies, or any other form of media?"	Text								
+Personal Interest	"Would you describe yourself as a visual, auditory, or kinesthetic learner?"	Choice	Auditory	Kinesthestic	Natural	Read	Write	Linguistic	Musical	Visual
+Personal Interest	Are you interested in traveling?	Choice	Adventure journey	comfortable journey						
+Personal Interest	Are there specific places you particularly enjoy traveling to?	Text								
+Profession	Could you describe the nature of your work or profession?	Text								
+Profession	Are you currently enrolled in an academic program?	Choice	Yes	No						
+Profession	"If studying, could you specify the nature of the course you are currently involved in?"	Text								
+Profession	Are there any specific challenges you are currently facing in your work or study?	Text								
+Life Style	Do you engage in regular exercise or yoga?	Choice	Yes	No						
+Life Style	Do you incorporate meditation or any other calming activities into your routine?	Choice	Yes	No						
+Alcoho	Do you consume alcohol?	Choice	Yes	No						
+Alcoho	"If yes, how often do you typically consume alcohol?"	Choice	Daily	Weekly	Monthly	Quarterly	Once in a year			
+Alcoho	"When consuming alcohol, do you have a preferred quantity?"	Numeric								
+Alcoho	Are you currently taking any medications?	Text								
+Diet	Do you include vegetables in your regular diet?	Choice	Yes	No						
+Diet	Are fruits a part of your regular diet?	Choice	Yes	No						
+Diet	Do you include eggs in your diet?	Choice	Yes	No						
+Diet	"When dining out, what type of food do you generally prefer?"	Text								
+Diet	Do you ever have a craving for any particular type of food?	Choice	Yes	No						
+Diet	How would you describe your daily water intake?	Numeric								
+Diet	Do you follow a vegetarian or non-vegetarian diet?	Choice	Vegetarian	Non-vegetarian						
+Diet	Are there specific types of food that you absolutely love?	Choice	spicy	Medium spicy	Sweet					
+Physical Nature	How many hours of sleep do you typically get per night?	Numeric								
+Physical Nature	Do you get sound sleep?	Choice	Yes	No						
+Physical Nature	Have you been experiencing any specific health issues recently?	Text								
+Physical Nature	"Are you currently prescribed any medications, and if so, are you consistent in taking them? Do you observe any side effects if you miss a dose or take it?"	Text								
+Physical Nature	Any recent toxic relationship?	Text								
+Emotional Stability	How do you typically respond in conflicts or disagreements?	Choice	Stay silent	React spontaneously	Burst out	Stay alone				
+Emotional Stability	How much time required to become normal after temperment?	Choice	less than 30 min.	2-4 Hrs	One day	More than one day				
+Emotional Stability	How do you cope with your temperment?	Choice	Stay silent	React spontaneously	Burst out	Stay alone				
+Emotional Stability	Any problems realted to dear one recently happened?	Choice	Yes	No						
+Emotional Stability	If yes elaborate who was it?And how did you take it?	Text								
+Emotional Stability	"Do you experience mood swings, and if so, are there specific scenarios or triggers that tend to provoke them?"	Choice	Yes	No						
+Emotional Stability	Do you easily tear up? 	Choice	Yes	No						
+Emotional Stability	How do you feel after that?	Choice	Reduce pain	Solved problems	Relaxed					
+Emotional Stability	Do you plan ahead/ what are expectations from life?	Text								
+Emotional Stability	Have a supportive relationship? 	Choice	Yes	No						
+Emotional Stability	Have a history of abuse?   	Choice	Yes	No						
+Financial stabilty	Any problem finanacial problem in past or current?	Choice	Yes	No						
+Financial stabilty	How do you typically manage and budget your expenses to ensure financial stability?	Choice	planned	Unplanned						
+Diseases	Alzheimer's	Choice	Yes	No						
+Diseases	Anemia	Choice	Yes	No						
+Diseases	Arthritis	Choice	Yes	No						
+Diseases	Asthma	Choice	Yes	No						
+Diseases	Cancer	Choice	Yes	No						
+Diseases	Diabetes	Choice	Yes	No						
+Diseases	Epilepsy	Choice	Yes	No						
+Diseases	Diabetes	Choice	Yes	No						
+Diseases	Heart disease	Choice	Yes	No						
+Diseases	Hypertension	Choice	Yes	No						
+Diseases	Kidney disease	Choice	Yes	No						
+Diseases	Mental illness	Choice	Yes	No						
+Diseases	Multiple sclerosis	Choice	Yes	No						
+Diseases	Parkinson's	Choice	Yes	No						
+Diseases	Stroke	Choice	Yes	No						
+Diseases	Prostatitis	Choice	Yes	No						
+Diseases	Others:	Text								
+"Ears, nose, and throat"	Hearing loss	Choice	Yes	No						
+"Ears, nose, and throat"	 Ringing in ears	Choice	Yes	No						
+"Ears, nose, and throat"	Altered sense of smell	Choice	Yes	No						
+"Ears, nose, and throat"	 Trouble swallowing	Choice	Yes	No						
+"Ears, nose, and throat"	 Neck pain / stiffness	Choice	Yes	No						
+Lungs	Non productive Cough	Choice	Yes	No						
+Lungs	 Pain with breathing at rest	Choice	Yes	No						
+Lungs	 Pain with breathing with exertion	Choice	Yes	No						
+Lungs	Pain with inspiration	Choice	Yes	No						
+Lungs	Wheezing	Choice	Yes	No						
+Lungs	Coughing up blood	Choice	Yes	No						
+Lungs	Short of breath with exertion	Choice	Yes	No						
+Cardiovascular system	"Chest pain, pressure at rest"	Choice	Yes	No						
+Cardiovascular system	" Chest pain, pressure with exertion"	Choice	Yes	No						
+Cardiovascular system	 Heart palpitations	Choice	Yes	No						
+Cardiovascular system	 Normal tolerance to exercise	Choice	Yes	No						
+Cardiovascular system	 Pain in legs with walking	Choice	Yes	No						
+"Hematology, blood"	 Anemia	Choice	Yes	No						
+"Hematology, blood"	 Others	Text								
+Allergies	 Hives	Choice	Yes	No						
+Allergies	 Others	Text								
+Gastrointestinal system	 pain with swallowing	Choice	Yes	No						
+Gastrointestinal system	 Abdominal pain	Choice	Yes	No						
+Gastrointestinal system	 Nausea	Choice	Yes	No						
+Gastrointestinal system	 Vomiting	Choice	Yes	No						
+Gastrointestinal system	 Others	Text								
+Neurological system	 Headache	Choice	Yes	No						
+Neurological system	 Loss of sensation in any part of the body	Choice	Yes	No						
+Neurological system	 Weakness of any extremity	Choice	Yes	No						
+Neurological system	 Uncontrolled muscle movements	Choice	Yes	No						
+Neurological system	 Dizziness	Choice	Yes	No						
+Neurological system	 Problems with walking	Choice	Yes	No						
+Neurological system	 Speech disturbance	Choice	Yes	No						
+Neurological system	 Others	Text								
+Genito urinary system	 Pain with urination	Choice	Yes	No						
+Genito urinary system	 Urinary frequency	Choice	Yes	No						
+Genito urinary system	 Urinary urgency	Choice	Yes	No						
+Genito urinary system	 Blood in urine	Choice	Yes	No						
+Genito urinary system	 Trouble starting stream	Choice	Yes	No						
+Genito urinary system	 Difficulty stopping stream	Choice	Yes	No						
+Genito urinary system	 (Men) erectile dysfunction	Choice	Yes	No						
+Genito urinary system	 Musculoskeletal system	Choice	Yes	No						
+Genito urinary system	 Joint pain any joints	Choice	Yes	No						
+Genito urinary system	 Pain in any muscles	Choice	Yes	No						
+Genito urinary system	 Muscle weakness	Choice	Yes	No						
+General constitution	 Fatigue	Choice	Yes	No						
+General constitution	 Night sweats	Choice	Yes	No						
+General constitution	 Weight loss	Choice	Yes	No						
+General constitution	 Weight gain	Choice	Yes	No						
+General constitution	 Others	Text								
+Integumentary / skin system	 Rashes	Choice	Yes	No						
+Integumentary / skin system	 Others	Text								
+Psychiatric	 Depressed	Choice	Yes	No						
+Psychiatric	 Anxious nervous	Choice	Yes	No						
+Psychiatric	 Others	Text								
+Endocrine	 Goiter / lump in neck	Choice	Yes	No						
+Endocrine	 Appetite change	Choice	Yes	No						
+Endocrine	 Heat or cold intolerance	Choice	Yes	No						
+Endocrine	 Others	Text								
+Eyes	 Headache	Choice	Yes	No						
+Eyes	 Blurry vision	Choice	Yes	No						
+Eyes	 Double vision	Choice	Yes	No						
+Eyes	 Visual changes	Choice	Yes	No						
